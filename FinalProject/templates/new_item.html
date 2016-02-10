@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+ <div class="header vert" align="center">
+        <form class="form-horizontal" action="/created" method="POST">
+                                <fieldset>
+                                    <div id="legend">
+                                        <h1 class="page-header">Create a New Item </h1>
+                                    </div>
+									
+                                    <div class="control-group">
+                                        <label class="control-label"  for="name">Item Name</label>
+                                        <div class="controls">
+                                            <input type="text" id="username" name="item_name" placeholder="Item Name" class="input-xlarge">
+                                        </div>
+                                    </div>
+									
+								
+									<!-- May not be needed, value that isn't stored in datastore atm. -->
+									<div class="control-group">
+                                        <label class="control-label"  for="type">Type of Item</label>
+                                        <div class="controls">
+                                            <select name="item_type">
+												<option value="Clothing">Clothing</option>
+												<option value="Electronics">Electronics</option>
+												<option value="Vehicles">Vehicles</option>
+												<option value="Furniture">Furniture</option>
+											</select>
+                                        </div>
+                                    </div>
+									
+									
+									
+                                    <div class="control-group">
+                                    <div class="control-group">                                    
+                                        <label class="control-label"  for="description">Description</label>
+                                        <div class="controls">
+                                            <input type="text" id="description" name="item_description" placeholder="Item description" class="input-xlarge">
+                                        </div>
+                                    </div>
+									
+									
+                                    <div class="control-group">
+                                        <label class="control-label"  for="price">Price</label>
+                                        <div class="controls">
+                                            <input type="number" id="price" name="item_price" placeholder="Item price" class="input-xlarge">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label"  for="stock">Stock</label>
+                                        <div class="controls">
+                                            <input type="number" id="stock" name="item_stock" placeholder="Item stock" class="input-xlarge">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="control-group">
+                                        <!-- Button -->
+                                        <div class="controls">
+                                            <button class="btn btn-success">Create A shoping item</button>
+                                        </div>
+                                    </div>
+                                        </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </fieldset>
+        </form>
+</div>
+{% endblock %}
