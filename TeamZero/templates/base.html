@@ -30,19 +30,15 @@
       <ul class="nav navbar-nav">
         {% if user %}
         <li><a href="/logout">Logout</a></li>
-        <li><a href="/about">Tasks</a></li>
-        <li><a href="/about">Schedule</a></li>
+        <li><a href="/newitem">Add a Task</a></li>
+        <li><a href="/store">Task List</a></li>
         {% block nav %}
         {% endblock %}
         {% else %}
         <li><a href="/login">Login</a></li>
         {% endif %}
         <li><a href="/about">About</a></li>
-		<li><a href="/about">Tasks</a></li>
-        <li><a href="/about">Schedule</a></li>
-		<!--Remove the extra Tasks and Schedule, only for Prototype-->
         <li><a href="#footer">Social Media</a></li>
-		
       </ul>
       {% if user %}
       <ul class="nav navbar-nav navbar-right">
@@ -76,7 +72,7 @@
 
         </ul>
         <hr>
-        <p>Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">TeamZero</a>.<br>Company 2015</p>
+        <p>Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Team Zero</a>.<br>Company 2016</p>
       </div>
     </div>
   </div>
