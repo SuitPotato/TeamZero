@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
+
+<!--
  <div class="header vert" align="center">
         <form class="form-horizontal" action="/created" method="POST">
                                 <fieldset>
@@ -15,7 +17,7 @@
                                     </div>
 									
 								
-									<!-- May not be needed, value that isn't stored in datastore atm. -->
+									<!-- May not be needed, value that isn't stored in datastore atm. 
 									<div class="control-group">
                                         <label class="control-label"  for="type">Type of Task</label>
                                         <div class="controls">
@@ -47,9 +49,39 @@
                                     </div>
 									
 									
+									
+									
+									<div class="container">
+									<div class="row">
+										<div class='col-sm-6'>
+											<div class="form-group">
+												<div class='input-group date' id='datetimepicker1'>
+													<input type='text' class="form-control" />
+													<span class="input-group-addon">
+														<span class="glyphicon glyphicon-calendar"></span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<script type="text/javascript">
+											$(function () {
+												$('#datetimepicker1').datetimepicker();
+											});
+										</script>
+									</div>
+								</div>
+
+									
+									
+									
+									
+									
+									
+									<div class="container">
+
                                     <br>
                                     <div class="control-group">
-                                        <!-- Button -->
+                                        <!-- Button 
                                         <div class="controls">
                                             <button class="btn btn-success">Create A Task!</button>
                                         </div>	
@@ -61,5 +93,68 @@
                                     <br>
                                 </fieldset>
         </form>
+		
+		-->
+		
+						<form class="form-horizontal">
+						<fieldset>
+
+						<!-- Form Name -->
+						<legend>Task Creator</legend>
+
+						<!-- Select Basic -->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="Category">Category</label>
+						  <div class="col-md-4">
+							<select id="Category" name="Category" class="form-control">
+							  <option value="Project">Project</option>
+							  <option value="Task">Task</option>
+							  <option value="Knowledge">Knowledge</option>
+							</select>
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="textinput">Task Name</label>  
+						  <div class="col-md-4">
+						  <input id="username" name="item_name" type="text" placeholder="Item Name" class="form-control input-md" required="">
+						  <span class="help-block">Title</span>  
+						  </div>
+						</div>
+				
+				
+				
+						<!-- Textarea -->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="Description">Description</label>
+						  <div class="col-md-4">                     
+							<textarea class="form-control" id="description" name="item_description">Task Description.</textarea>
+						  </div>
+						</div>
+
+						
+						
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="Assign">Assign To</label>  
+						  <div class="col-md-4">
+						  <input id="Assign" name="Assign" type="text" placeholder="Email Address" class="form-control input-md">
+						  <span class="help-block">Assign to Email Address</span>  
+						  </div>
+						</div>
+
+						
+						
+						<!-- Button -->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="Submit">Submit</label>
+						  <div class="col-md-4">
+							<button id="Submit" name="Submit" class="btn btn-success">Submit</button>
+						  </div>
+						</div>
+
+						</fieldset>
+						</form>
 </div>
 {% endblock %}
