@@ -17,7 +17,7 @@
 import webapp2
 from handlers import IndexPage, NewItem, LoginPage, ItemInput, LogoutPage
 from handlers import About, LoggedInPage, LoggedOutPage, Success
-from handlers import StoreHandler, StoreClothes, StoreVehicle, StoreVehicle, StoreElectronics, StoreFurniture, StoreUser
+from handlers import StoreHandler, StoreUser
 
 app = webapp2.WSGIApplication([
     ('/newitem', NewItem),
@@ -30,9 +30,5 @@ app = webapp2.WSGIApplication([
     ('/loggedout', LoggedOutPage),
 	('/success', Success),
 	('/store', StoreHandler),
-	('/clothes', StoreClothes),
-	('/vehicle', StoreVehicle),
-	('/furniture', StoreFurniture),
-	('/electronics', StoreElectronics),
 	('/userprofile', StoreUser)
 ], debug=True)
