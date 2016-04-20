@@ -40,22 +40,23 @@
     <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav">
         {% if user %}
-        <li><a href="/logout">Logout</a></li>
         <li><a href="/newitem">Add a Task</a></li>
         <li><a href="/store">Task List</a></li>
         {% block nav %}
         {% endblock %}
         {% else %}
-        <li><a href="/login">Login</a></li>
         {% endif %}
         <li><a href="/about">About</a></li>
         <li><a href="#footer">Social Media</a></li>
       </ul>
-      {% if user %}
       <ul class="nav navbar-nav navbar-right">
+	  {% if user %}
         <li><a href="userprofile">Welcome, {{user.email()}}</a></li>
-      </ul>
+        <li><a href="/logout">Logout</a></li>
+	   {% else %}
+        <li><a href="/login">Login</a></li>
       {% endif %}
+      </ul>
     </div>
    </div>
 </div>
