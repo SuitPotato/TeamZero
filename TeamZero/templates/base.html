@@ -50,12 +50,12 @@
         <li><a href="https://github.com/SuitPotato/TeamZero">GitHub</a></li>
 		
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav nav-pills navbar-right">
 	  {% if user %}
-        <li><a href="userprofile">Welcome, {{user.email()}}</a></li>
-        <li><a href="/logout">Logout</a></li>
+        <li class="active"><a href="#"> Welcome, {{user.email()}} <span class="badge">42</span></a></li>
+        <li><a href="/logout">Logout <span class="badge"></span></a></li>
 	   {% else %}
-        <li><a href="/login">Login</a></li>
+        <li><a href="/login">Login <span class="badge"></span></a></li>
       {% endif %}
       </ul>
 	  
