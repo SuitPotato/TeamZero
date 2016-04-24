@@ -4,9 +4,19 @@
         <h1>Team Zero</h1>
       <p class="lead">Where you can create Tasks!</p>
       <div>&nbsp;</div>
-      <a href="store" class="btn btn-default btn-lg">Get Taskin'!</a>
+      {% if user %}
+      <p class ="lead">You are currently logged in as {{user.email()}}</p>
+      {% else %}
+      <a href="/login" class="btn btn-default btn-lg">Get Taskin'!</a>
+      {% endif %}
     <br>
     <br>
     </div>
 
 {% endblock %}
+
+{% if user %}
+<body style="margin-left:250px;">
+{% else %}
+<body>
+{% endif %}
