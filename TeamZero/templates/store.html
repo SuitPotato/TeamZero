@@ -11,31 +11,22 @@
         </li>
 {% endblock %}
 {% block content %}
-       <div class="header vert" align="center">
+       <div class="header vert" align="left">
         <div id="legend">
 			<h1 class="page-header">Tasks</h1>
         </div>
 		<div>
-			<table class="table">
+			<div class="list-group">
 				{% for item in items %}
-				<tr class="success"> <!-- Row 1 -->
-					<td align="center"><div style="font-size: 26px; font-style: bold;">{{ item.name }}</div><!-- Column 1 -->
-					<div style="font-size: 13px; font-style: bold;">Posted by: {{item.owner}}</div></td>
-				</tr>
-				<tr class="danger">
-					<td align="center">Task Type {{item.type}}
-					</td><!-- Column 1 -->
-				</tr>
-				<tr class="info"> <!-- Row 2 -->
-					<td align="center">{{item.description}}</td><!-- Column 1 -->
-				</tr>
-				
-				<tr> <!-- Row 3 -->
-					<!-- <td align="center"></td> Column 1 -->
-				</tr>
+				<a href="{{ item.description }}" class="list-group-item">
+			    {{item.name}}
+				</a>
 				{% endfor %}
-				</div>
-				</table>
-				
+			</div>
+			<div class="jumbotron">
+ 				<h1>Preview pane</h1>
+				<p>Need to get details of selected task in here somehow</p>
+			</div>
+
 		</div>
 {% endblock %}
