@@ -88,3 +88,4 @@ crashlytics-build.properties
 
 *Thumbs.db*
 .project
+TeamZero/models/test_user_class.py
