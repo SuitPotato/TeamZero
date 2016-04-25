@@ -1,15 +1,5 @@
 {% extends "base.html" %}
-{% block nav %}
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Categories<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="">Projects</a></li>
-            <li><a href="">Tasks</a></li>
-            <li><a href="">Knowledge</a></li>
-            
-          </ul>
-        </li>
-{% endblock %}
+
 {% block content %}
        <div class="header vert" align="left">
         <div id="legend">
@@ -18,8 +8,7 @@
 		<div>
 			<div class="list-group">
 				{% for item in items %}
-				<a href="{{ item.description }}" class="list-group-item">
-			    {{item.name}}
+				<a class="list-group-item">
 				</a>
 				{% endfor %}
 			</div>
