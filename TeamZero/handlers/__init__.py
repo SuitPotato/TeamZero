@@ -12,3 +12,4 @@ from store_handler import StoreHandler
 from store_user import StoreUser
 from store_knowledge import StoreKnowledge
 from store_task import StoreTask
+from store_details import StoreDetails
