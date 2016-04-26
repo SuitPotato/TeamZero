@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+{% block nav %}
+        
+{% endblock %}
+{% block content %}
+      <h1>Tasks</h1>
+		<div>
+			<div class="list-group">
+				{% for item in items %}
+				<a href="/details" class="list-group-item">
+			    {{item.name}}
+			    <span href="/push" class="badge">Push</span>
+			    <span href="/delete" class="badge">Delete</span>
+			    <span href="/edit" class="badge">Edit</span>
+			    <span href="/finished" class="badge">Finished</span>
+				</a>
+				{% endfor %}
+			</div>
+
+		</div>
+{% endblock %}
