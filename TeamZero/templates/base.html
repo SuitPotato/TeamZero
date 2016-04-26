@@ -80,13 +80,12 @@
         <li><a href="https://github.com/SuitPotato/TeamZero">GitHub</a></li>
 		
       </ul>
-      <ul class="nav nav-pills navbar-right">
+      <ul class="nav navbar-nav navbar-right">
 	  {% if user %}
-        <li class="active"><a href="userprofile"> Welcome, {{user.email()}} <!--<span class="badge">4</span>--></a></li>
-		<li><a href="#">Total tasks <!--<span class="badge">52</span>--></a></li>
-        <li><a href="/logout">Logout <span class="badge"></span></a></li>
+        <li><a href="userprofile">Welcome, {{user.email()}}</a></li>
+        <li><a href="/logout">Logout</a></li>	  
 	   {% else %}
-        <li><a href="/login">Login <span class="badge"></span></a></li>
+        <li><a href="/login">Login</a></li>
       {% endif %}
       </ul>
 	  
