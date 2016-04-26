@@ -8,17 +8,14 @@
 		<div>
 			<div class="list-group">
 				{% for item in items %}
-				<a class="list-group-item">
-					<a href="{{ item.description}}" class="btn btn-default">{{item.name}}</a>
-					<a align="right" href="#" class="btn btn-default">Finished</a>
-					<a align="right" href="#" class="btn btn-default">Edit</a>
-					<a align="right" href="#" class="btn btn-default">Delete</a>
+				<a href="/details" class="list-group-item">
+			    {{item.name}}
+			    <span href="/push" class="badge">Push</span>
+			    <span href="/delete" class="badge">Delete</span>
+			    <span href="/edit" class="badge">Edit</span>
+			    <span href="/finished" class="badge">Finished</span>
 				</a>
 				{% endfor %}
-			</div>
-			<div class="jumbotron">
- 				<h1>Preview pane</h1>
-				<p>Need to get details of selected task in here somehow</p>
 			</div>
 
 		</div>
