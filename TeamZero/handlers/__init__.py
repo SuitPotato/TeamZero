@@ -16,3 +16,7 @@ from store_knowledge import StoreKnowledge
 from store_task import StoreTask
 from store_details import StoreDetails
 from store_project import StoreProject
+from delete_page import DeletePage
+from edit_page import EditPage
+from finished_page import FinishedPage
+from push_page import PushPage
