@@ -82,8 +82,8 @@
       </ul>
       <ul class="nav nav-pills navbar-right">
 	  {% if user %}
-        <li class="active"><a href="userprofile"> Welcome, {{user.email()}} <span class="badge">4</span></a></li>
-		<li><a href="#">Total tasks <span class="badge">52</span></a></li>
+        <li class="active"><a href="userprofile"> Welcome, {{user.email()}} <!--<span class="badge">4</span>--></a></li>
+		<li><a href="#">Total tasks <!--<span class="badge">52</span>--></a></li>
         <li><a href="/logout">Logout <span class="badge"></span></a></li>
 	   {% else %}
         <li><a href="/login">Login <span class="badge"></span></a></li>
