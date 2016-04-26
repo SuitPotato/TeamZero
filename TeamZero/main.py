@@ -16,11 +16,14 @@
 #
 import webapp2
 from handlers import IndexPage, NewItem, LoginPage, ItemInput, LogoutPage
+from handlers import NewTask, NewKnowledge
 from handlers import About, LoggedInPage, LoggedOutPage, Success
 from handlers import StoreHandler, StoreUser, StoreKnowledge, StoreTask, StoreDetails
 
 app = webapp2.WSGIApplication([
     ('/newitem', NewItem),
+    ('/newtask', NewTask),
+    ('/newknowledge', NewKnowledge),
     ('/', IndexPage),
     ('/login', LoginPage),
     ('/logout', LogoutPage),

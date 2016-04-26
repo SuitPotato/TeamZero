@@ -3,6 +3,8 @@ from login_page import LoginPage
 from logout_page import LogoutPage
 from index_page import IndexPage
 from new_item import NewItem
+from new_task import NewTask
+from new_knowledge import NewKnowledge
 from item_input import ItemInput
 from about import About
 from success import Success

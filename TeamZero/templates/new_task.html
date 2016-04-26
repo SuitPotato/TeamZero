@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+		
+	<form class="form-horizontal" action="/created" method="POST">
+	<fieldset>
+
+	<!-- Form Name -->
+	<legend>Task Creator</legend>
+
+		<!-- Select Basic -->
+		<div class="form-group">
+		<label class="col-md-4 control-label" for="Category">Category</label>
+			<div class="col-md-4">
+			<select id="Category" name="item_type" class="form-control">
+			<option value="Task">Task</option>
+			</select>
+			</div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		<label class="col-md-4 control-label" for="textinput">Task Name</label>  
+			<div class="col-md-4">
+			<input id="username" name="item_name" type="text" placeholder="Item Name" class="form-control input-md" required="">
+			<span class="help-block">Title</span>  
+			</div>
+		</div>
+	
+		<!-- Text input-->
+		<div class="form-group">
+		<label class="col-md-4 control-label" for="Description">Description</label>  
+			<div class="col-md-4">
+			<input id="description" name="item_description" type="text" placeholder="Task Description" class="form-control input-md" required="">
+			<span class="help-block">Description text</span>  
+			</div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		<label class="col-md-4 control-label" for="Assign">Assign To</label>  
+			<div class="col-md-4">
+			<input id="Assign" name="Assign" type="text" placeholder="Email Address" class="form-control input-md" required="">
+			<span class="help-block">Assign to Email Address</span>  
+			</div>
+		</div>
+
+
+
+		<!-- Button -->
+		<div class="form-group">
+		<label class="col-md-4 control-label" for="Submit">Submit</label>
+			<div class="col-md-4">
+			<button id="Submit" name="Submit" class="btn btn-success">Submit</button>
+			</div>
+		</div>
+
+	</fieldset>
+	</form>
+	
+</div>
+{% endblock %}

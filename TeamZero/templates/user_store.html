@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-      <h1>User's Tasks</h1>
+      <h1>User's Tasks and Knowledge</h1>
 		<div>
 			<div class="list-group">
 				{% for item in items %}
@@ -13,10 +13,6 @@
 			    <span href="/finished" class="badge">Finished</span>
 				</a>
 				{% endfor %}
-			</div>
-			<div class="jumbotron">
- 				<h1>Preview pane</h1>
-				<p>Need to get details of selected task in here somehow</p>
 			</div>
 
 		</div>
