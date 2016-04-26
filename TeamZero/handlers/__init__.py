@@ -20,3 +20,5 @@ from delete_page import DeletePage
 from edit_page import EditPage
 from finished_page import FinishedPage
 from push_page import PushPage
+from archive_page import ArchivePage
+from associate_page import AssociatePage

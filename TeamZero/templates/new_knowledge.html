@@ -44,6 +44,17 @@
 			</div>
 		</div>
 
+		<!-- Select Basic -->
+		<div class="form-group">
+		<label class="col-md-4 control-label" for="Association">Associate With Task</label>
+			<div class="col-md-4">
+			<select id="Association" name="item_association" class="form-control">
+			{% for item in items %}
+				<option value="{{item.name}}">{{item.name}}</option>
+			{% endfor %}
+			</select>
+			</div>
+		</div>
 
 
 		<!-- Button -->

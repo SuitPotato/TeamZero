@@ -20,7 +20,7 @@ from handlers import NewTask, NewKnowledge
 from handlers import About, LoggedInPage, LoggedOutPage, Success
 from handlers import StoreHandler, StoreUser, StoreKnowledge, StoreTask, StoreDetails
 from handlers import StoreProject
-from handlers import DeletePage, EditPage, FinishedPage, PushPage
+from handlers import DeletePage, EditPage, FinishedPage, PushPage, ArchivePage, AssociatePage
 
 app = webapp2.WSGIApplication([
     ('/newitem', NewItem),
@@ -43,6 +43,8 @@ app = webapp2.WSGIApplication([
 	('/delete', DeletePage),
 	('/edit', EditPage),
 	('/finished', FinishedPage),
-	('/push', PushPage)
+	('/push', PushPage),
+	('/archive', ArchivePage),
+	('/associate', AssociatePage)
 	
 ], debug=True)

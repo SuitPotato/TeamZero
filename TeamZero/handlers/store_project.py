@@ -6,7 +6,7 @@ from models import Item
 class StoreProject(BaseHandler):
 	def get(self):
 		user = users.get_current_user()
-		items = Item.query().filter(Item.type == 'Project').order(-Item.date).fetch(10)
+		items = Item.query().filter(Item.type == 'Project').order(-Item.date).fetch()
 
 		template_values = {
 			'items':items,

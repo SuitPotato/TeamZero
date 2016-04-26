@@ -6,16 +6,17 @@
 {% block content %}
       <h1>Knowledge</h1>
 		<div>
-			<div class="list-group" style="margin-top:70px;">
+		<div>
+			<div class="list-group" style="margin-top:90px;">
 				{% for item in items %}
-				<a href="/details" class="list-group-item" style="margin-top:-60px;">
+				<a href="/details" class="list-group-item" style="margin-top:-80px;">
 			    {{item.name}}
-			    <a href="/push" class="badge" style="position:relative;margin-top:-60px;margin-left:930px;">Push</a>
-			    <a href="/delete" class="badge" style="position:relative;margin-top:-100px;margin-left:980px;">Delete</a>
-			    <a href="/edit" class="badge" style="position:relative;margin-top:-140px;margin-left:1035px;">Edit</a>
+			    <a href="/push" class="badge" style="position:relative;margin-top:-60px;margin-left:880px;">Push</a>
+			    <a href="/associate" class="badge" style="position:relative;margin-top:-100px;margin-left:930px;">Associate</a>
+			    <a href="/archive" class="badge" style="position:relative;margin-top:-140px;margin-left:1010px;">Archive</a>
+			    <a href="/edit" class="badge" style="position:relative;margin-top:-180px;margin-left:1075px;">Edit</a>
 				</a>
 				{% endfor %}
 			</div>
-
 		</div>
 {% endblock %}

@@ -9,6 +9,7 @@ class ItemInput(webapp2.RequestHandler):
 		itemname=self.request.get("item_name")
 		itemtype=self.request.get("item_type")
 		itemdescription=self.request.get("item_description")
+		itemassociation=self.request.get("item_association")
 		
 		
 		#Placing data in model
@@ -16,6 +17,7 @@ class ItemInput(webapp2.RequestHandler):
 		item.name=itemname
 		item.type=itemtype
 		item.description=itemdescription
+		item.association=itemassociation
 		item.owner=users.get_current_user().email()
 		
 		item.put()
