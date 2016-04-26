@@ -6,7 +6,7 @@ from models import Item
 class StoreDetails(BaseHandler):
 	def get(self):
 		user = users.get_current_user()
-		items = Item.query().filter(Item.type == 'Knowledge').order(-Item.date).fetch(10)
+		items = Item.query().order(-Item.date).fetch(10)
 
 		template_values = {
 			'items':items,
