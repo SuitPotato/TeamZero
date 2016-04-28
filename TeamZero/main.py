@@ -19,7 +19,7 @@ from handlers import IndexPage, NewItem, LoginPage, ItemInput, LogoutPage
 from handlers import NewTask, NewKnowledge, NewProject
 from handlers import About, LoggedInPage, LoggedOutPage, Success
 from handlers import StoreHandler, StoreUser, StoreKnowledge, StoreTask, StoreDetails
-from handlers import StoreProject, StoreDetailsProject
+from handlers import StoreProject, StoreDetailsProject, TaskDetails
 from handlers import DeletePage, EditPage, FinishedPage, PushPage, ArchivePage
 from handlers import AssociatePage, AssignUsers
 
@@ -42,6 +42,7 @@ app = webapp2.WSGIApplication([
 	('/task', StoreTask),
 	('/details', StoreDetails),
 	('/details_project', StoreDetailsProject),
+	('/details_task', TaskDetails),
 	('/project', StoreProject),
 	('/delete', DeletePage),
 	('/edit', EditPage),

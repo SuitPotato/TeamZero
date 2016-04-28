@@ -18,6 +18,7 @@ from store_task import StoreTask
 from store_details import StoreDetails
 from store_project import StoreProject
 from store_details_project import StoreDetailsProject
+from store_details_task import TaskDetails
 from delete_page import DeletePage
 from edit_page import EditPage
 from finished_page import FinishedPage
