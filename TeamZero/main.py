@@ -16,16 +16,18 @@
 #
 import webapp2
 from handlers import IndexPage, NewItem, LoginPage, ItemInput, LogoutPage
-from handlers import NewTask, NewKnowledge
+from handlers import NewTask, NewKnowledge, NewProject
 from handlers import About, LoggedInPage, LoggedOutPage, Success
 from handlers import StoreHandler, StoreUser, StoreKnowledge, StoreTask, StoreDetails
-from handlers import StoreProject
-from handlers import DeletePage, EditPage, FinishedPage, PushPage, ArchivePage, AssociatePage
+from handlers import StoreProject, StoreDetailsProject
+from handlers import DeletePage, EditPage, FinishedPage, PushPage, ArchivePage
+from handlers import AssociatePage, AssignUsers
 
 app = webapp2.WSGIApplication([
     ('/newitem', NewItem),
     ('/newtask', NewTask),
     ('/newknowledge', NewKnowledge),
+    ('/newproject', NewProject),
     ('/', IndexPage),
     ('/login', LoginPage),
     ('/logout', LogoutPage),
@@ -39,12 +41,14 @@ app = webapp2.WSGIApplication([
 	('/knowledge', StoreKnowledge),
 	('/task', StoreTask),
 	('/details', StoreDetails),
+	('/details_project', StoreDetailsProject),
 	('/project', StoreProject),
 	('/delete', DeletePage),
 	('/edit', EditPage),
 	('/finished', FinishedPage),
 	('/push', PushPage),
 	('/archive', ArchivePage),
-	('/associate', AssociatePage)
+	('/associate', AssociatePage),
+	('/assignusers', AssignUsers)
 	
 ], debug=True)

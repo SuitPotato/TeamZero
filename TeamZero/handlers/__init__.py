@@ -5,6 +5,7 @@ from index_page import IndexPage
 from new_item import NewItem
 from new_task import NewTask
 from new_knowledge import NewKnowledge
+from new_project import NewProject
 from item_input import ItemInput
 from about import About
 from success import Success
@@ -16,9 +17,11 @@ from store_knowledge import StoreKnowledge
 from store_task import StoreTask
 from store_details import StoreDetails
 from store_project import StoreProject
+from store_details_project import StoreDetailsProject
 from delete_page import DeletePage
 from edit_page import EditPage
 from finished_page import FinishedPage
 from push_page import PushPage
 from archive_page import ArchivePage
 from associate_page import AssociatePage
+from assign_users import AssignUsers

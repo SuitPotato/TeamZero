@@ -4,16 +4,14 @@
 	<form class="form-horizontal" action="/created" method="POST">
 	<fieldset>
 
-	<legend>Knowledge Associator</legend>
+	<legend>Assign Users To Project</legend>
 
 		<!-- Select Basic -->
 		<div class="form-group">
-		<label class="col-md-4 control-label" for="Association">Associate With Task</label>
+		<label class="col-md-4 control-label" for="Assign">Assign Users</label>
 			<div class="col-md-4">
-			<select id="Association" name="item_association" class="form-control">
-			{% for item in items %}
-				<option value="{{item.name}}">{{item.name}}</option>
-			{% endfor %}
+			<select id="Assign" name="item_users" class="form-control">
+				<option value="{{user}}">{{user}}</option>
 			</select>
 			</div>
 		</div>

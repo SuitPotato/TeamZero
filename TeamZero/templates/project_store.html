@@ -8,14 +8,19 @@
 		<div>
 			<div class="list-group" style="margin-top:70px;">
 				{% for item in items %}
-				<a href="/details" class="list-group-item" style="margin-top:-60px;">
+				<a href="/details_project" class="list-group-item" style="margin-top:-60px;">
 			    {{item.name}}
-                <a href="/push" class="badge" style="position:relative;margin-top:-60px;margin-left:930px;">Push</a>
-			    <a href="/delete" class="badge" style="position:relative;margin-top:-100px;margin-left:980px;">Delete</a>
-			    <a href="/edit" class="badge" style="position:relative;margin-top:-140px;margin-left:1035px;">Edit</a>
+                <a href="/assignusers" class="badge" style="position:relative;margin-top:-60px;margin-left:740px;">Assign Users</a>
+			    <a href="/newtask" class="badge" style="position:relative;margin-top:-100px;margin-left:840px;">Add Tasks</a>
+			    <a href="/newknowledge" class="badge" style="position:relative;margin-top:-140px;margin-left:920px;">Add Knowledge</a>
+			    <a align="center" href="/delete" class="badge" style="position:relative;margin-top:-180px;margin-left:1030px;">Delete</a>
 				</a>
 				{% endfor %}
 			</div>
 
 		</div>
+		
+		<a href="/newproject" class="btn btn-default"><b><font color=#317eac>Create New Project</font></b></a>
+
+		
 {% endblock %}
