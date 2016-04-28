@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
+
+
 		
 	<form class="form-horizontal" action="/created" method="POST">
 	<fieldset>
@@ -11,8 +13,10 @@
 		<div class="form-group">
 		<label class="col-md-4 control-label" for="Category">Category</label>
 			<div class="col-md-4">
-			<select id="Category" name="item_type" class="form-control">
+			<select id="Category" name="Category" class="form-control">
+			<option value="Project">Project</option>
 			<option value="Task">Task</option>
+			<option value="Knowledge">Knowledge</option>
 			</select>
 			</div>
 		</div>
@@ -25,28 +29,33 @@
 			<span class="help-block">Title</span>  
 			</div>
 		</div>
-	
-		<!-- Text input-->
+
+
+
+		<!-- Textarea -->
 		<div class="form-group">
-		<label class="col-md-4 control-label" for="Description">Description</label>  
-			<div class="col-md-4">
-			<input id="description" name="item_description" type="text" placeholder="Task Description" class="form-control input-md" required="">
-			<span class="help-block">Description text</span>  
+		<label class="col-md-4 control-label" for="Description">Description</label>
+			<div class="col-md-4">                     
+			<textarea class="form-control" id="description" name="item_description">Task Description.</textarea>
 			</div>
 		</div>
+
+
 
 		<!-- Text input-->
 		<div class="form-group">
 		<label class="col-md-4 control-label" for="Assign">Assign To</label>  
 			<div class="col-md-4">
-			<input id="Assign" name="Assign" type="text" placeholder="Email Address" class="form-control input-md" required="">
+			<input id="Assign" name="Assign" type="text" placeholder="Email Address" class="form-control input-md">
 			<span class="help-block">Assign to Email Address</span>  
 			</div>
 		</div>
 
+
+
 		<!-- Button -->
 		<div class="form-group">
-		<label class="col-md-4 control-label" for="Submit"></label>
+		<label class="col-md-4 control-label" for="Submit">Submit</label>
 			<div class="col-md-4">
 			<button id="Submit" name="Submit" class="btn btn-success">Submit</button>
 			</div>
