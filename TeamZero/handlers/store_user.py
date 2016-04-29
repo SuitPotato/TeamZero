@@ -6,7 +6,8 @@ from models import Item
 class StoreUser(BaseHandler):
 	def get(self):
 		user = users.get_current_user()
-		items = Item.query().filter(Item.owner == user.email()).order(-Item.date).fetch()
+		items = Item.query().filter(Item.owner == user.email()).filter(Item.type == "Task").order(-Item.date).fetch()
+		items += Item.query().filter(Item.owner == user.email()).filter(Item.type == "Knowledge").order(-Item.date).fetch()
 
 		template_values = {
 			'items':items,
