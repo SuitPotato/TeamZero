@@ -13,10 +13,6 @@ class TaskDetails(BaseHandler):
 		match = re.search(r'(\d+)',citem).group(0)
 		
 		for item in items:
-			name = item.name
-			type = item.type
-			owner = item.owner
-			description = item.description
 			key = item.key
 			id = re.search(r'(\d+)',str(key)).group(0)
 			if id == match:
@@ -33,10 +29,6 @@ class TaskDetails(BaseHandler):
 		template_values = {
 			'items':items,
             'user':user,
-            'name':name,
-            'type':type,
-            'owner':owner,
-            'description':description,
             'passitem':passitem
 		}
 		
