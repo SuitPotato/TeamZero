@@ -9,22 +9,22 @@
 <thead>
 <tr>
 	<th>Name</th>
-	<th>Type</th>
-	<th>Owner</th>
 	<th>Description</th>
-	<th>Association</th>
+	<th>Type</th>
+	<th>Assigned To</th>
+	<th>Date</th>
+	<th>Owner</th>
 </tr>
 </thead>
 	<tbody>
-		{% for item in items %}
 		<tr>
-			<td>{{ item.name}}</td>
-			<td>{{ item.type}}</td>
-			<td>{{ item.owner}}</td>
-			<td>{{ item.description}}</td>
-			<td>{{ item.association}}</td>
+			<td>{{ passitem.name }}
+			<td>{{ passitem.description }}</td>
+			<td>{{ passitem.type }}</td>
+			<td>{{ passitem.owner }}</td>
+			<td>{{ passitem.date }}</td>
+			<td>{{ passitem.owner }}</td>
 		</tr>
-		{% endfor %}
 	</tbody>
 </table>
 

@@ -8,7 +8,7 @@
 		<div>
 			<div class="list-group" style="margin-top:90px;">
 				{% for item in items %}
-				<a href="/details_task" class="list-group-item" style="margin-top:-80px;">
+				<a href="/details_task?citem={{item}}" class="list-group-item" style="margin-top:-80px;">
 			    {{item.name}}
 			    <a href="/push" class="badge" style="position:relative;margin-top:-60px;margin-left:930px;">Push</a>
 			    <a href="/delete" class="badge" style="position:relative;margin-top:-100px;margin-left:980px;">Delete</a>
