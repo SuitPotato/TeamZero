@@ -7,8 +7,10 @@ from new_task import NewTask
 from new_knowledge import NewKnowledge
 from new_project import NewProject
 from item_input import ItemInput
+from item_delete import ItemDelete
 from about import About
 from success import Success
+from success_delete import SuccessDelete
 from loggedin_page import LoggedInPage
 from loggedout_page import LoggedOutPage
 from store_handler import StoreHandler

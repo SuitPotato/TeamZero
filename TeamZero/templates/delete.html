@@ -1,15 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
-<form class="form-horizontal">
-  <fieldset>
-    <legend>Are you sure you want to delete this item?</legend>
-    <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button type="reset" class="btn btn-default">Cancel</button>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </fieldset>
-</form>
+	<form class="form-horizontal" action="/item_delete?deletethis={{ditem}}" method="POST">
+	<fieldset>
+
+	<!-- Form Name -->
+	<legend>Are you sure you want to delete item?</legend>
+
+		<!-- Button -->
+		<div class="form-group">
+		<label class="col-md-4 control-label" for="Cancel"></label>
+			<div class="col-md-4">
+			<button id="Cancel" name="Cancel" class="btn btn-cancel">{{ditem}}</button>
+			</div>
+		</div>
+		
+		<!-- Button -->
+		<div class="form-group">
+		<label class="col-md-4 control-label" for="Submit"></label>
+			<div class="col-md-4">
+			<button id="Submit" name="Submit" class="btn btn-success">Submit</button>
+			</div>
+		</div>
+
+	</fieldset>
+	</form>
 
 {% endblock %}
