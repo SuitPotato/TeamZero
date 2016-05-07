@@ -13,7 +13,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
+
+# Main.py
+# Imports all of the handlers and creates the actual app itself.
+# This is the first thing that is called when GAE is called.
 import webapp2
 from handlers import IndexPage, NewItem, LoginPage, ItemInput, LogoutPage
 from handlers import NewTask, NewKnowledge, NewProject
@@ -22,6 +25,8 @@ from handlers import StoreHandler, StoreUser, StoreKnowledge, StoreTask, StoreDe
 from handlers import StoreProject, StoreDetailsProject, TaskDetails, KnowledgeDetails
 from handlers import DeletePage, EditPage, FinishedPage, PushPage, ArchivePage
 from handlers import AssociatePage, AssignUsers, ItemDelete
+
+# App itself, below would be the 'links'
 
 app = webapp2.WSGIApplication([
     ('/newitem', NewItem),

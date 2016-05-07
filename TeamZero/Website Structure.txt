@@ -1,0 +1,40 @@
+Website Structure
+
+Website structure is designed as the following:
+
+Designed with the intention to separate the models, views, and controllers.
+In the instance of this website the models would refer to the folder 'models'.
+The folder 'templates' would correspond to the views of the website. And 
+lastly the folder 'handlers' would correspond to the controllers.
+
+A quick break down of what is in each folder for reference:
+
+1. Handlers
+
+	Handlers contains the actual methods in our website, they can gather 
+	information, display information, request information and more. This
+	is the backbone that is hidden to user.
+	
+2. Models
+	
+	Our entity that our database has actually created. Details about the Model
+	inside.
+	
+3. Static
+
+	Static Bootstrap stuff (CSS, Fonts, JS) inside. This is referred to in the 
+	base.html and used throughout.
+	
+4. Templates
+
+	Actual HTML for the website. Nothing too fancy here, most of the code for 
+	the website is base.html which is extended into all of the other webpages.
+	
+==============================================================================
+
+All of the folders contains an __init__ file. (Exception with static and 
+templates). The purpose of this is to separate the code for readability. We 
+technically can call all of the files in one big file, however that becomes 
+cumbersome very fast.
+
+==============================================================================

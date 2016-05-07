@@ -1,0 +1,28 @@
+1. Download the Google App Engine (GAE) SDK for Python
+- https://cloud.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python
+
+2. Ensure Python 2.7 is installed otherwise GAE will not function properly.
+
+3. Open GAE Launcher
+
+4. Go to File>Add Existing Application
+
+5a. Browse to the folder location of the project
+- Ex: ../GitHub/TeamZero/TeamZero/..
+
+5b. Change Ports if need be.
+
+6. Click on newly created application and press Run
+- Give it a few seconds to initialize
+
+7. You're all set!
+
+To get to the website the web address is local so it would be:
+
+localhost:port
+(Ex: localhost:8080)
+
+To get to the admin side it is:
+
+localhost:adminport
+(Ex: localhost:8000)

@@ -1,3 +1,5 @@
+# Not Used in the website as of now.
+
 from google.appengine.ext import ndb
 from google.appengine.api import users
 
