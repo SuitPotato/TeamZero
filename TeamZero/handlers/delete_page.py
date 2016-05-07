@@ -5,6 +5,13 @@ from google.appengine.api import users
 from handlers import BaseHandler
 from models import Item
 
+##################################################################
+# Handler for deleting an item from the datastore. A key string called
+# ditem is passed from a mouse click into this handler and the
+# matching item from the datstore is found, to be passed into
+# the delete page
+#
+##################################################################
 class DeletePage(BaseHandler):
     def get(self):
     	user = users.get_current_user()

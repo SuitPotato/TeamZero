@@ -5,6 +5,12 @@ from google.appengine.api import users
 from handlers import BaseHandler
 from models import Item
 
+#################################################################################
+# Handler for displaying details of a specific knowledge item to the user
+# Key data is passed to this handler via the "citem" string that comes from a 
+# mouse click on knowledge_store.html. The matching item is found from the datastore
+# and passed to details_knowledge.html where details are displayed
+#################################################################################
 class KnowledgeDetails(BaseHandler):
 	def get(self):
 		user = users.get_current_user()

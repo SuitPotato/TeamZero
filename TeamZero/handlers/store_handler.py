@@ -3,6 +3,12 @@ from google.appengine.api import users
 from handlers import BaseHandler
 from models import Item
 
+#################################################################################
+# Handler for showing all knowledge and task items that are assigned to a user.
+# Reached by clicking the "Welcome,<user_name>" button on the top nav-bar. All
+# task and knowledge items are fetched from the datastore and passed to store.html
+# where they are displayed.
+#################################################################################
 class StoreHandler(BaseHandler):
 	def get(self):
 		user = users.get_current_user()

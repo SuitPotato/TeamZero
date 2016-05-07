@@ -5,6 +5,12 @@ from google.appengine.api import users
 from handlers import BaseHandler
 from models import Item
 
+#################################################################################
+# Handler for displaying details of a specific task item to the user. From the
+# task_store.html, a user clicks on a task and it's key information is passed to
+# this handler as "citem" string. The matching task item is found from the 
+# datastore and passed to details_task.html, where details are displayed
+#################################################################################
 class TaskDetails(BaseHandler):
 	def get(self):
 		user = users.get_current_user()
