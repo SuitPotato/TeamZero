@@ -2,7 +2,13 @@
 {% block content %}
 <form class="form-horizontal">
   <fieldset>
-    <legend>Push item to another user</legend>
+    <legend>Push item to another user?</legend>
+    <div class="form-group">
+      <label for="Description" class="col-lg-2 control-label">Description</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputEmail" placeholder="{{passitem.name}}">
+      </div>
+    </div>
     <div class="form-group">
       <label for="inputEmail" class="col-lg-2 control-label">Push To</label>
       <div class="col-lg-10">

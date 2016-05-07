@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-	<form class="form-horizontal" action="/item_delete?deletethis={{ditem}}" method="POST">
+	<form class="form-horizontal" action="/item_delete?ditem={{ditem}}">
 	<fieldset>
 
 	<!-- Form Name -->
@@ -10,7 +10,7 @@
 		<div class="form-group">
 		<label class="col-md-4 control-label" for="Cancel"></label>
 			<div class="col-md-4">
-			<button id="Cancel" name="Cancel" class="btn btn-cancel">{{ditem}}</button>
+			<button id="Cancel" name="Cancel" class="btn btn-cancel">Cancel</button>
 			</div>
 		</div>
 		
